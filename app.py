@@ -1,7 +1,6 @@
 import streamlit as st
 from utils import address_list
 
-import numpy as np
 import pandas as pd
 import joblib
 
@@ -29,4 +28,4 @@ if st.button("Predict Price"):
 
     prediction = model.predict(user_data)[0]
 
-    st.write(f"### Predicted Price: {prediction:,.0f} IRR")
+    st.write(f"### Predicted Price: {prediction:,.0f} TMN")
